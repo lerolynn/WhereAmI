@@ -19,20 +19,22 @@
     
     <!--Tune parameters-->
     <param name="min_particles" value="100"/>
-    <param name="max_particles" value="5000"/>
-    <param name="update_min_d" value="0.2"/>
-    <param name="update_min_a" value="pi/6.0"/>
+    <param name="max_particles" value="3000"/> <!--5000 -->
+    <param name="update_min_d" value="0.1"/> <!--0.2 -->
+    <param name="update_min_a" value="pi/12.0"/> <!--pi/6.0 -->
 
     <param name="laser_min_range" value="-1.0"/> 
     <param name="laser_max_range" value="-1.0"/>
-    <param name="laser_max_beams" value="30"/>
-    <param name="laser_z_hit" value="0.95"/>
-    <param name="laser_z_rand" value="0.05"/>
+    <param name="laser_max_beams" value="60"/> <!--100, 30 -->
+    <param name="laser_z_hit" value="0.95"/> <!--0.5, 0.9, 0.93, 0.95, 0.97 -->
+    <param name="laser_z_rand" value="0.1"/> <!--0.05, 0.2 -->
+ 
 
-    <param name="odom_alpha1" value="0.2"/>
-    <param name="odom_alpha2" value="0.2"/>
-    <param name="odom_alpha3" value="0.2"/>
-    <param name="odom_alpha4" value="0.2"/>
+    <!--NOTE: Noise value is kept at default but lowering below values will greatly improve accuracy of localization  -->
+    <param name="odom_alpha1" value="0.2"/> <!--0.1, 0.25 -->
+    <param name="odom_alpha2" value="0.2"/> <!--0.1, 0.25 -->
+    <param name="odom_alpha3" value="0.2"/> <!--0.1, 0.25 -->
+    <param name="odom_alpha4" value="0.2"/> <!--0.1, 0.25 -->
 >
 
   </node>
